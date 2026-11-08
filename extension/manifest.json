@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "SigFree for iCloud Mail",
+  "description": "Adds your SigFree signature, with pictures and links, to new emails on iCloud.com.",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "host_permissions": ["http://127.0.0.1:8793/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["https://www.icloud.com/*", "https://*.icloud.com/*"],
+    "js": ["content.js"],
+    "all_frames": true,
+    "match_origin_as_fallback": true,
+    "run_at": "document_idle"
+  }]
+}

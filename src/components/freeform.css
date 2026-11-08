@@ -1,0 +1,13 @@
+.freeform { border: 1px solid var(--line, #d8dddd); border-radius: 8px; overflow: hidden; }
+.freeform-toolbar, .freeform-picture { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 12px; background: var(--paper, #f5f7f7); }
+.freeform-toolbar button, .freeform-picture button, .freeform-toolbar select { min-height: 34px; border: 1px solid #cdd5d3; border-radius: 4px; padding: 5px 9px; background: #fff; color: #17221f; font: inherit; font-size: 12px; }
+.freeform-toolbar button:hover, .freeform-picture button:hover { border-color: #287564; background: #edf7f3; }
+.freeform-toolbar label, .freeform-picture label { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #42514b; }
+.freeform-toolbar input[type=color] { width: 32px; height: 32px; padding: 2px; border: 1px solid #cdd5d3; background: #fff; }
+.freeform-document { min-height: 200px; padding: 20px; overflow: auto; background: #fff; color: #111; font: 13px Arial, sans-serif; line-height: 1.5; }
+.freeform-document:focus { outline: 2px solid #287564; outline-offset: -2px; }
+.freeform-document img { cursor: grab; }
+.freeform-note { margin: 0; padding: 10px 12px; color: #52605b; font-size: 12px; background: #f5f7f7; }
+.freeform-picture { border-top: 1px solid #d8dddd; }
+.freeform-picture output { min-width: 42px; font-size: 12px; }
+@media (max-width: 600px) { .freeform-document { padding: 12px; } .freeform-toolbar { gap: 6px; } }
